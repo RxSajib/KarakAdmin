@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:id="@+id/CardID"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="@drawable/click_ripple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/HearLayoutID"
+                    android:background="#00BCD4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/theree_do"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+
+                    </ImageView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textSize="16sp"
+                        android:text="Karak Blood Bank"
+                        android:padding="8dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:layout_height="wrap_content">
+
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/MiddleLayout"
+                    android:layout_below="@+id/HearLayoutID"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:weightSum="4"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/nameText"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/tab_indicator_text"
+                                    android:text="Username :"
+                                    android:layout_height="wrap_content">
+                                </com.google.android.material.textview.MaterialTextView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/RUsernames"
+                                    android:layout_toRightOf="@+id/nameText"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+
+
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/mobiletext"
+                                    android:layout_marginLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="7dp"
+                                    android:textColor="@android:color/tab_indicator_text"
+                                    android:text="Mobile :"
+                                    android:layout_height="wrap_content">
+                                </com.google.android.material.textview.MaterialTextView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/RDonarPhoneNumberID"
+                                    android:layout_toRightOf="@+id/mobiletext"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textStyle="bold"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="16dp"
+                                    android:textColor="@android:color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </com.google.android.material.textview.MaterialTextView>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="0dp">
+
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/locationtexts"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="7dp"
+                                    android:textColor="@android:color/tab_indicator_text"
+                                    android:text="Location :"
+                                    android:layout_height="wrap_content">
+                                </com.google.android.material.textview.MaterialTextView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/RDonarocationID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@+id/locationtexts"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16dp"></com.google.android.material.textview.MaterialTextView>
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+
+
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/bloodtext"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:layout_centerVertical="true"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="16sp"
+                                    android:layout_marginTop="7dp"
+                                    android:textColor="@android:color/tab_indicator_text"
+                                    android:text="Blood :"
+                                    android:layout_height="wrap_content">
+                                </com.google.android.material.textview.MaterialTextView>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/RDonarBlooad"
+                                    android:layout_toRightOf="@+id/bloodtext"
+                                    android:layout_marginLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="16dp"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="wrap_content">
+
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/ProfileImageID"
+                                        android:layout_width="70dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@drawable/default_image"
+                                        android:layout_height="70dp">
+
+                                    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_below="@+id/ProfileImageID"
+                                        android:id="@+id/NameOFdonarID"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="16sp"
+                                        android:textColor="@android:color/black"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_height="wrap_content">
+
+
+                                    </com.google.android.material.textview.MaterialTextView>
+
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/BottomLayoutID"
+                    android:layout_below="@+id/MiddleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/MessageTextID"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#636363"
+                        android:textSize="14sp"
+                        android:text="hello i am sajib roy"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8FA"
+    tools:context=".WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageID"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/blood"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </ImageView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_below="@id/imageID"
+            android:id="@+id/Text"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="Welcome To Karak Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+
+        <EditText
+            android:id="@+id/EmailD"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_design"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"
+            android:drawableLeft="@drawable/email_icon"
+            android:layout_below="@+id/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/PasswordID"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_design"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:drawableLeft="@drawable/passwordicon"
+            android:layout_below="@+id/EmailD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <RelativeLayout
+            android:layout_below="@+id/PasswordID"
+            android:layout_width="match_parent"
+            android:id="@+id/LoginButtonID"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_button_design"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="45dp">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Login Account"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

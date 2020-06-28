@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F6F8FA"
+    tools:context=".UserFragement">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/UserinfoID"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/DonarSearch"
+                android:src="@drawable/sdsd"
+                android:layout_width="70dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_height="70dp">
+            </pl.droidsonroids.gif.GifImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_below="@id/DonarSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:text="Searching Users"
+                android:textSize="15sp"
+                android:textColor="@android:color/tab_indicator_text"
+                app:fontFamily="sans-serif-smallcaps"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/UserRecylaerViewID"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+     </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RootlayoutID"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_ripple">
+
+            <RelativeLayout
+                android:id="@+id/HearLayoutID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E91E63">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/theree_do">
+
+                </ImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="Karak Blood Bank"
+                    android:textColor="#fff"
+                    android:textSize="17sp">
+
+
+                </com.google.android.material.textview.MaterialTextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/MiddleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/HearLayoutID">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/nameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Username :"
+                                android:textColor="@android:color/tab_indicator_text"
+                                android:textSize="16sp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/UUsernames"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/nameText"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="@android:color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/mobiletext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Mobile :"
+                                android:textColor="@android:color/tab_indicator_text"
+                                android:textSize="16sp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/UDonarPhoneNumberID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/mobiletext"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="@android:color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/locationtexts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Location :"
+                                android:textColor="@android:color/tab_indicator_text"
+                                android:textSize="16sp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/UDonarocationID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/locationtexts"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="@android:color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/bloodtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="7dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="Blood :"
+                                android:textColor="@android:color/tab_indicator_text"
+                                android:textSize="16sp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/UDonarBlooad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_toRightOf="@+id/bloodtext"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="16dp"
+                                android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true">
+
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/UProfileImageID"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/default_image">
+
+                                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/UNameOFdonarID"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/UProfileImageID"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="sans-serif"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp">
+
+
+                                </com.google.android.material.textview.MaterialTextView>
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MiddleLayout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/RewuestMessageTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="hello i am sajib roy"
+                    android:textColor="#636363"
+                    android:textSize="14sp">
+
+
+                </com.google.android.material.textview.MaterialTextView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

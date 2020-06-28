@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loding_background"
+    android:padding="15dp">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/images"
+        android:src="@drawable/progress"
+        android:layout_width="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="70dp">
+
+    </pl.droidsonroids.gif.GifImageView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_below="@id/images"
+        android:id="@+id/waittext"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Please Wait ..."
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_below="@id/waittext"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:text="Please Wait we are reading your\nemail and password"
+        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+</RelativeLayout>

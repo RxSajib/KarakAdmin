@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8FA"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DonarFregement">
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/DonarInfoID"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/DonarSearch"
+                android:src="@drawable/sdsd"
+                android:layout_width="70dp"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_height="70dp">
+            </pl.droidsonroids.gif.GifImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_below="@id/DonarSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:text="Searching Donors"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/tab_indicator_text"
+                app:fontFamily="sans-serif-smallcaps"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/DonarRecylearViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

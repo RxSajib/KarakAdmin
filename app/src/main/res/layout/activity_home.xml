@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8FA"
+    tools:context=".HomeActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/HomeToolbarID"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Karak Blood Admin Panel"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/MainFreamLayoutID"
+        android:layout_below="@+id/HomeToolbarID"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/AppbarLayout"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/AppbarLayout"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:menu="@menu/blood_menu"
+        android:id="@+id/BottomNavViewID"
+        android:background="#2554C7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</RelativeLayout>

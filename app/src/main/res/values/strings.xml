@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KarakAdmin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blanksdd fragment</string>
+    <string name="errormessage">his content is no longer available -
+        The content you requested cannot be displayed right now. It may be
+        temporarily unavailable, the link you clicked on may have expired, or
+        you may not have permission to view this page</string>
+</resources>
